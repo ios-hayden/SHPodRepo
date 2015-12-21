@@ -17,11 +17,11 @@ Pod::Spec.new do |s|
   
   s.platform     = :ios, "7.0"
 
-  s.source       = { :git => "git@github.com:superhayden/SHNetwork.git", :tag => "v#{s.version}" }
+  s.source       = { :git => "git@github.com:superhayden/SHNetwork.git", :tag => "#{s.version}" }
 
 
   s.source_files  = "SHNetwork", "SHNetwork/**/*.{h,m}"
-  s.public_header_files = ["SHNetwork/SHNetwork.h", "SHNetwork/SHNetworkDefinition.h", "SHNetwork/CRMRequest/SHRequest.h", "SHNetwork/CRMRequest/SHDownload.h", "SHNetwork/CRMRequest/SHUpload.h"]
+  s.public_header_files = "SHNetwork/**/*.h"
 
   #s.framework  = "CoreData"
   s.requires_arc = true
